@@ -78,7 +78,7 @@ span {
 }
 
 h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin: 10px 0;
 }
 
@@ -239,7 +239,7 @@ article {
 }
 
 .imgPlacement {
-  height: 250px;
+  height: 350px;
   width: 100%;
   border: solid black 3px;
 }
