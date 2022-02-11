@@ -1,0 +1,264 @@
+/*=================
+    Universal Layout
+===================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: solid 2px black; */
+}
+
+html {
+  font-size: 16px;
+  font-family: helvetica;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.cfix {
+  clear: both;
+}
+
+/*=================
+    Components
+===================*/
+
+/*=================
+    Typography
+===================*/
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  padding-top: 325px;
+  color: white;
+}
+
+p {
+  color: rgb(184, 184, 184);
+}
+
+.redSpan,
+.tealSpan,
+.greySpan {
+  padding: 0;
+  display: inline;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.redSpan {
+  color: red;
+}
+
+.tealSpan {
+  color: teal;
+}
+
+.greySpan {
+  color: grey;
+}
+
+span {
+  display: block;
+  padding-top: 20px;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+h4 {
+  font-size: 1.4rem;
+  vertical-align: bottom;
+  padding-top: 140px;
+}
+/*=================
+    Layout
+===================*/
+
+.mainContainer {
+  max-width: 1900px;
+  margin: 0 auto;
+}
+
+/* ----- Navigation ----- */
+
+header {
+  background-color: black;
+  height: 60px;
+}
+
+header * {
+  float: left;
+  color: white;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: black;
+}
+
+.bbcLogo {
+  height: 60px;
+  width: 200px;
+}
+
+.signIN {
+  width: 15%;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+nav li {
+  padding: 1em;
+  text-align: center;
+  border-right: 2px solid grey;
+}
+
+nav li:first-child {
+  border-left: solid 2px grey;
+}
+
+::placeholder {
+  color: rgb(36, 36, 36);
+}
+
+.search {
+  height: 40px;
+  margin: 10px 0 10px 20px;
+  padding-left: 10px;
+  float: right;
+  /* width: 95%; */
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.more {
+  width: 150px;
+}
+
+/* ----- Main----- */
+
+main > h2 {
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+main > section {
+  height: 500px;
+  width: 50%;
+  float: left;
+  /* border: solid white 10px; */
+  overflow: hidden;
+}
+
+main > h2 + h2 {
+  text-align: right;
+  font-weight: 500;
+  color: rgb(177, 177, 177);
+}
+
+/* Main section 1 */
+.mainSection1 {
+  border-right: solid white 20px;
+}
+
+.mainSection1 > section {
+  background-color: rgb(0, 0, 0);
+  padding: 0 15px;
+  height: 100%;
+}
+
+.mainSection1 p {
+  line-height: 1.5rem;
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+
+/* Main Section 2  */
+
+.mainSection2 > section {
+  width: 50%;
+  float: left;
+  height: 50%;
+  padding: 0 15px;
+  background-color: rgb(236, 199, 199);
+}
+
+.box1 {
+  border-right: solid white 10px;
+  border-bottom: solid white 5px;
+}
+.box2 {
+  border-left: solid white 10px;
+  border-bottom: solid white 5px;
+}
+
+.box3 {
+  border-top: solid white 5px;
+  border-right: solid white 10px;
+}
+
+.box4 {
+  border-top: solid white 5px;
+  border-left: solid white 10px;
+}
+
+.mainSectionRow2 {
+  padding-top: 160px;
+}
+
+/* Articles  */
+
+.articleSection h2 {
+  margin: 40px 0 15px 0;
+}
+
+article {
+  float: left;
+  width: 33.33%;
+}
+
+.imgPlacement {
+  height: 250px;
+  width: 100%;
+  border: solid black 3px;
+}
+
+article p {
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.article1 {
+  border-right: 10px solid white;
+}
+
+.article2 {
+  border-left: solid white 10px;
+  border-right: solid white 10px;
+}
+
+.article3 {
+  border-left: solid white 10px;
+}
